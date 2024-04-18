@@ -35,4 +35,4 @@ transformers==4.30.2
 onnx
 onnxruntime
 optimum
-olive-ai
+olive-ai[gpu]
