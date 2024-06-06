@@ -41,3 +41,6 @@ notification.mp3
 /.coverage*
 /test/test_outputs
 /cache
+*.un~
+*.md~
+*.docx
