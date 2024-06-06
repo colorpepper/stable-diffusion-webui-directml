@@ -23,12 +23,19 @@ Olive是一款对模型进行转换、优化、量化和自动调整的Python工
 ## 驱动程序AMD Software: Adrenalin Edition 23.7.2或更高版本 https://www.amd.com/zh-hans/support
 #在AMD GPUs上使用Olive优化版A1111 Stable Diffusion WebUI
 ## 打开Anaconda终端，输入以下命令，然后按回车键：
-## 创建名为Automatic1111_olive的conda虚拟环境 conda create --name Automatic1111_olive python=3.10.6
-## 启动虚拟环境 conda activate Automatic1111_olive
-## 克隆stable diffusion webui到本地 git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml
-## 进入文件夹 cd stable-diffusion-webui-directml
-## 初始化子模型 git submodule update --init –recursive
-## 启动A1111 WebUI webui.bat --onnx --backend directml 这一步将会安装Olive、ONNX Runtime以及其他软件依赖项并自动启动WebUI，这个过程可能需要几分钟
+### 创建名为Automatic1111_olive的conda虚拟环境 
+conda create --name Automatic1111_olive python=3.10.6
+### 启动虚拟环境 
+conda activate Automatic1111_olive
+### 克隆stable diffusion webui到本地 
+git clone https://github.com/lshqqytiger/stable-diffusion-webui-directml
+### 进入文件夹 
+cd stable-diffusion-webui-directml
+### 初始化子模型 
+git submodule update --init –recursive
+### 启动A1111 WebUI 
+webui.bat --onnx --backend directml 
+这一步将会安装Olive、ONNX Runtime以及其他软件依赖项并自动启动WebUI，这个过程可能需要几分钟
 
-## 在弹出的WebUI窗口中，转到Olive优化选项卡并点击优化按钮示例图片详见.docx 文件
+### 在弹出的WebUI窗口中，转到Olive优化选项卡并点击优化按钮示例图片详见.docx 文件
 
